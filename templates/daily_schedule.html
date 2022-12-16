@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+    <br></br>
+    <div class="container">
+		<h3>{{ pretty_date }}</h3>
+
+		<div class="row" style="text-align:center">
+			<div class="col-lg-4">
+				<div class="list-group">
+					{% for game in schedule_list %}
+						<a class="score-boxes list-group-item list-group-item-action">
+							<div class="row">
+								<div class="col-xs-4">
+								    {{game}}
+								</div>
+        						<div class="col-xs-4">
+									&nbsp;
+								</div>
+							</div>
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+    <!-- <ul>
+      {% for game in schedule_list %}
+        <li>
+            <h2>{{game}}</h2>
+        </li>
+      {% endfor %}
+    </ul> -->
+</body>
+{% endblock %}

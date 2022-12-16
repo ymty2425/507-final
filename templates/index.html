@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+    <br><br/>
+    <form action="/daily_schedule" method="POST" style="text-align:center"> 
+        <p>
+            What date would you like to display the schedule?
+        </p>
+        <p>
+            <input name="date" type="datetime"/><br/>
+        </p>
+    
+        <input type="submit" value="Submit"/>
+      </form>
+</body>
+{% endblock %}

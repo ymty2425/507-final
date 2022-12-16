@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>nba schedule - {{ title }}</title>
+
+	<!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='stylesheet/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='stylesheet/style.css') }}" rel="stylesheet" type="text/css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="NBA basketball daily schedule">
+    <meta name="keywords" content="NBA,basketball,schedule">
+    <meta name="author" content="zhengyuan">
+    <link rel="shortcut icon" href="">
+</head>
+
+<!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">NBA Schedule</span>
+  </nav>
+
+<!--index.html-->
+{% block body %}
+{% endblock %}
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="{{ url_for('static', filename='javascript/bootstrap.bundle.min.js') }}"></script>
